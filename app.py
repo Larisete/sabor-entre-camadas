@@ -17,6 +17,91 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# ==========================================
+# IDENTIDADE VISUAL - SABOR ENTRE CAMADAS
+# ==========================================
+
+st.markdown("""
+<style>
+
+/* Fundo */
+.stApp {
+    background-color: #FCE4EF;
+    color: #6B183D;
+}
+
+/* Menu lateral */
+[data-testid="stSidebar"] {
+    background-color: #F8C5DC;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #6B183D !important;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Botões */
+.stButton > button {
+    background-color: #FF1493;
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #C90069;
+    color: white !important;
+    transform: scale(1.02);
+}
+
+/* Campos de texto */
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stTimeInput input,
+.stTextArea textarea {
+    background-color: white;
+    color: #6B183D;
+    border: 1px solid #E88AB5;
+    border-radius: 10px;
+}
+
+/* Caixas de seleção */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Cartões e métricas */
+div[data-testid="stMetric"] {
+    background-color: white;
+    border: 1px solid #F2A7C8;
+    padding: 18px;
+    border-radius: 15px;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #FF1493;
+    font-weight: bold;
+}
+
+/* Divisórias */
+hr {
+    border-color: #E88AB5;
+}
+
+/* Links */
+a {
+    color: #C90069 !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 NOME_SISTEMA = "Sabor entre Camadas — Gestão de Pedidos"
 CLIENTE = "Sabor entre Camadas"
 SQUAD = "Squad de Desenvolvimento"
@@ -223,7 +308,7 @@ def obter_slots_disponiveis(data_agendamento):
     """
 
     horarios = [
-        time(09, 0),
+        time(9, 0),    
         time(10, 0),
         time(11, 0),
         time(14, 0),

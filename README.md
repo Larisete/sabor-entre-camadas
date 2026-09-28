@@ -102,42 +102,6 @@ A interface deverá utilizar como cores principais:
 Azul-claro
 Branco
 
-4. Mapeamento de Dados & Schema JSON (Para os Devs)
-Definam os campos obrigatórios que o sistema receberá do Marketing (Entrada) e o que o sistema
-retornará após o processamento (Saída):
-{
-"cliente_marketing": "Sabor entre Camadas",
-"versao_briefing": "1.0",
-"dados_entrada_usuario": {
-"Nome": "Nome do Cliente",
-"email": "email@exemplo.com",
-"telefone": "(61) 99999-9999",
-"endereco": "Endereço do cliente",
-"produto": "Bolo de aniversário",
-"quantidade": 1,
-"data_agendamento": "2026-09-25",
-"horario_agendamento": "18:00",
-"forma_pagamento": "PIX",
-"observacoes": "Bolo de chocolate com decoração azul"
-},
-"dados_processados": {
-"numero_pedido": "PED20260925001",
-"valor_total": 120.00,
-"status_pedido": "AGENDADO",
-"status_pagamento": "PAGO",
-"data_limite_cancelamento": "2026-09-23",
-
-"horario_limite_cancelamento": "18:00"
-},
-"dados_saida_sistema": {
-"resultado": "PEDIDO_AGENDADO",
-"mensagem": "Pedido realizado com sucesso.",
-"data_entrega": "2026-09-25",
-"horario_entrega": "18:00",
-"valor_total": 120.00
-}
-}
-
 5. Critérios de Aceite do Marketing (Definition of Done - DoD)
 [ ] O formulário/API funcionando sem erros de digitação ou execução.
 [ ] A classificação/cálculo correto com base na regra de negócio alinhada hoje.
